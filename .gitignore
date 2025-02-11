@@ -128,6 +128,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+
+predictive-maintenance-env
 .env
 .venv
 env/
