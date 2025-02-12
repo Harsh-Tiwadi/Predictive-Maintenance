@@ -1,6 +1,4 @@
 import boto3
-import pandas as pd
-
 
 class AwsDataHandler():
     """
@@ -43,10 +41,11 @@ class AwsDataHandler():
         return s3_url
 
 
-if __name__ == '__main__':
-    file_path='data/aircraft engine/PM_train.parquet'
-    aws_file_path='data/predictive-maintenance/clean_data/clean_data.parquet'
-    downloader = AwsDataHandler(aws_file_path=aws_file_path)
-    path = downloader.get_data_from_aws()
-    df = pd.read_parquet(path)
-    df.info()
+# if __name__ == '__main__':
+    # import pandas as pd
+    # file_path='data/aircraft engine/PM_train.parquet'
+    # aws_file_path='data/predictive-maintenance/clean_data/clean_data.parquet'
+    # downloader = AwsDataHandler(aws_file_path=aws_file_path)
+    # path = downloader.get_data_from_aws()
+    # df = pd.read_parquet(path)
+    # df.info()
